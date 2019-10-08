@@ -73,7 +73,6 @@ static addTrainee(request, response) {
       const startDate = new Date().toLocaleDateString();
 
       client.hexists(`Trainee:${id}`, 'id', (err, reply) => {
-
       if(!reply){
         return response.status(404).json({
           status: 404,

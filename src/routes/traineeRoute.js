@@ -1,5 +1,5 @@
 import express from 'express';
-import TraineeController from '../controller/TraineeController';
+import TraineeController from '../controllers/TraineeController';
 import authenticate from '../middlewares/authentication';
 import traineeValidator from '../middlewares/validators/traineeValidator';
 import paramsValidator from '../middlewares/validators/paramValidator';
@@ -42,6 +42,10 @@ router.get('/trainees',
 
 router.patch('/trainees/edit/:id', 
   validateParamsId,
+  firstnameValidator,
+  lastnameValidator,
+  emailValidator,
+  stackValidator,
   validate, 
   authenticate, 
   editATrainee);

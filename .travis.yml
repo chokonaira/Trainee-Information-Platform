@@ -1,0 +1,14 @@
+language: node_js
+node_js: 
+  - "stable"
+cache:
+  directories:
+    - "node_modules"
+script:
+  - npm run test
+after_success: 
+  - npm run coverage
+services:
+  - redis-server
+notifications:
+ email: false

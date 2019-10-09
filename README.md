@@ -25,13 +25,13 @@ View Postman Documention spec here: [ Postman Doc ](https://documenter.getpostma
 
 METHOD |    DESCRIPTION       |   ENDPOINTS
 -------|----------------------|-------------------------
-POST | User Sign up | https://enyata-tmp.herokuapp.com/api/v1/auth/signup
-POST | User Login | https://enyata-tmp.herokuapp.com/api/v1/auth/login
-POST | create Trainee record | https://enyata-tmp.herokuapp.com/api/v1/trainees/add
-GET | View Single Trainee record | https://enyata-tmp.herokuapp.com/api/v1/trainees/:id
-GET | View all Trainee records | https://enyata-tmp.herokuapp.com/api/v1/trainees
-PATCH | Edit a Trainee record | https://enyata-tmp.herokuapp.com/api/v1/trainees/edit/:id
-DELETE | Delete a Trainee record | https://enyata-tmp.herokuapp.com/api/v1/trainees/:id
+POST | User Sign up | /api/v1/auth/signup
+POST | User Login | /api/v1/auth/login
+POST | create Trainee record | /api/v1/trainees/add
+GET | View Single Trainee record | /api/v1/trainees/:id
+GET | View all Trainee records | /api/v1/trainees
+PATCH | Edit a Trainee record | api/v1/trainees/edit/:id
+DELETE | Delete a Trainee record | /api/v1/trainees/:id
 
 ### Installation
 

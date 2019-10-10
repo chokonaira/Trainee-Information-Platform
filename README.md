@@ -1,6 +1,6 @@
-# Trainee Management Platform
+# Trainee Information Platform
 
-Trainee Management Platform is a simple Information Platform built with NodeJS/Express and Redis. Where authenticated users can create register, create, read, update and delete trainee records. 
+Trainee Information Platform is a simple information logging application built with NodeJS/Express and Redis. Where users can register, login, create, read, update and delete trainee records. 
 
 
 ## Badges
@@ -33,12 +33,13 @@ GET | View all Trainee records | /api/v1/trainees
 PATCH | Edit a Trainee record | api/v1/trainees/edit/:id
 DELETE | Delete a Trainee record | /api/v1/trainees/:id
 
-### Installation
+### Setting up T.I.P Locally
 
 - Clone the repository.
 ``` https://github.com/chokonaira/Trainee-Information-Platform.git```
 - Run npm install
-- Change .env.sample to .env and configure environmental variable
+- Install and have redis server running in your local machine
+- Change .env.sample to .env and configure environmental port
 - Install postman to test endpoints
 
 ## Built With
